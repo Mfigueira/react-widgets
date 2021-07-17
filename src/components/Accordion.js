@@ -1,6 +1,21 @@
 import React, { useState } from 'react';
 
-const Accordion = ({ items }) => {
+const items = [
+  {
+    title: 'React ?',
+    content: 'is a framework noma',
+  },
+  {
+    title: 'React 2?',
+    content: 'is a 222framework noma',
+  },
+  {
+    title: 'React 3?',
+    content: 'is a  333 framework noma',
+  },
+];
+
+const Accordion = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleTitleClick = index => {
